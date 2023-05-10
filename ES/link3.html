@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="/elog/IMAGENES/alcaparrosicon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ponóstico</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/elog/HM/styleLink1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+</head>
+
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="/elog/index.html"><img src="/elog/IMAGENES/image.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/elog/index.html">INICIO</a></li>
+                    <li><a href="/elog/HM/link1.html">HUELLA DE CARBONO</a></li>
+                    <li><a href="/elog/CONSUMOS/link2.html">CONSUMOS</a></li>
+                    <li><a href="/elog/NM/link5.html">NUESTRA META</a></li>
+                    <li><a href="/elog/NE/link6.html">NUESTRO EQUIPO</a></li>
+                </ul>
+            </div>
+            <div class="consumo">
+                <div class="container">
+                    <div class="row mt-5">
+                        <div class="col-md-4">
+                            <canvas id="myChart1"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <script src="" async defer></script>
+    </section>
+
+    <!--js para el menu toggle responsive-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-270px"
+        }
+    </script>
+
+</body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script type="module" src="/elog/ES/script.js"></script>
+
+</html>

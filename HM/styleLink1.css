@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*grueso*/
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+/* pista */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* rect */
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* rect en hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/elog/IMAGENES/alcaparros1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 80px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+@supports (-webkit-backdrop-filter:blur(1rem)) {
+    .nav-links {
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+    }
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(1, 153, 27);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.consumo {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+#myChart {
+    background-color: rgb(121, 121, 121);
+    left: 50%;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .header {
+        min-height: 155vh;
+    }
+    .text-box h1 {
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+        border-bottom: 1px solid #fff;
+        padding: 30px 10px;
+    }
+    .nav-links {
+        position: fixed;
+        background: hsl(0 0% 0% / 0.75%);
+        backdrop-filter: blur(1rem);
+        height: 100vh;
+        width: 270px;
+        top: 0;
+        right: -270px;
+        text-align: left;
+        z-index: 9999;
+        transition: 0.5s;
+    }
+    @supports (-webkit-backdrop-filter:blur(1rem)) {
+        .nav-links {
+            background: hsl(0 0% 100% / 0.2);
+            -webkit-backdrop-filter: blur(1rem);
+        }
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+    .consumo {
+        top: 380px;
+        width: 90%;
+    }
+    .swal-modal {
+        background-color: #555;
+    }
+    #myChart {
+        width: 10000;
+    }
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration-style: wavy;
+}
+
+p {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+}
+
+.swal-modal {
+    background-color: #555;
+}
+
+.swal-text {
+    color: #fff;
+    text-align: center;
+}
+
+.swal-button {
+    background-color: rgb(1, 153, 27);
+}
+
+.swal-icon--success:after,
+.swal-icon--success:before,
+.swal-icon--success__hide-corners {
+    background-color: transparent;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}

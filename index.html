@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="/elog/IMAGENES/alcaparrosicon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <title>Ecolog</title>
+    <link rel="stylesheet" href="/elog/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="/elog/index.html"><img src="/elog/IMAGENES/image.png" alt="Logo Colegio Hacienda los Alcaparros"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/elog/QUEES/link4.html">¿QUÉ ES LA HUELLA DE CARBONO?</a></li>
+                    <li><a href="/elog/NM/link5.html">NUESTRA META</a></li>
+                    <li><a href="/elog/NE/link6.html">NUESTRO EQUIPO</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>ECOLOG</h1>
+            <p>Este proyecto tiene la meta de rastrear la huella de carbono del<br>Colegio Hacienda los Alcaparros para informar a la comunidad
+            </p>
+            <a href="/elog/HM/link1.html" class="hero-btn1">HUELLA DE CARBONO</a>
+            <a href="/elog/CONSUMOS/link2.html" class="hero-btn2">SECTORES DE CONSUMO</a>
+            <a href="/elog/ES/link3.html" class="hero-btn3">CONSUMO ACTUAL</a>
+            <p1>Dejar nuestra huella reduciéndola</p1>
+        </div>
+
+    </section>
+
+    <!--js para el menu toggle responsives-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-270px"
+        }
+    </script>
+</body>
+
+</html>

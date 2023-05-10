@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/elog/IMAGENES/alcaparros1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 80px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+@supports (-webkit-backdrop-filter:blur(1rem)) {
+    .nav-links {
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+    }
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(1, 153, 27);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.pass {
+    padding: 8px 20px;
+    position: absolute;
+    cursor: pointer;
+    min-height: 10px;
+    width: 300px;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(1, 153, 27);
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+}
+
+.consumo {
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+#myChart1 {
+    width: 500px;
+    height: 700px;
+    background-color: rgb(121, 121, 121);
+}
+
+#myChart2 {
+    width: 500px;
+    height: 700px;
+    background-color: rgb(121, 121, 121);
+}
+
+#myChart3 {
+    width: 500px;
+    height: 700px;
+    background-color: rgb(121, 121, 121);
+}
+
+#forms {
+    width: 1200px;
+}
+
+.optf {
+    padding: 8px 20px;
+    position: absolute;
+    cursor: pointer;
+    min-height: 5vh;
+    width: 15%;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(1, 153, 27);
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+}
+
+.opt1 {
+    padding: 8px 20px;
+    position: absolute;
+    cursor: pointer;
+    min-height: 5vh;
+    width: 25%;
+    text-align: center;
+    top: 70%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    color: rgb(1, 153, 27);
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+}
+
+#info1 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#info1 #in1 {
+    position: relative;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #777;
+    margin: 0 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#info1 #in1:hover {
+    background: #86ff3b;
+    box-shadow: 0004px#333, 0006px#86ff3b;
+}
+
+.myForm {
+    color: #fff;
+    font-size: 30;
+}
+
+.opt1:focus {
+    border: 3px solid rgb(1, 153, 27);
+}
+
+.opt2 {
+    padding: 8px 20px;
+    cursor: pointer;
+    min-height: 5vh;
+    width: 25%;
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    outline: none;
+}
+
+.opt2:focus {
+    border: 3px solid rgb(1, 153, 27);
+}
+
+.opt3 {
+    padding: 8px 20px;
+    cursor: pointer;
+    min-height: 5vh;
+    width: 25%;
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    outline: none;
+}
+
+.opt3:focus {
+    border: 3px solid rgb(1, 153, 27);
+}
+
+.enviar {
+    padding: 12px 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.enviar:hover {
+    border: 1px solid rgb(1, 153, 27);
+    background: rgb(1, 153, 27);
+    transition: 1s;
+}
+
+.enviar {
+    color: #FFF;
+    transition: all 1s;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 12px 16px;
+    background: transparent;
+    cursor: pointer;
+    top: 90%;
+    left: 50%;
+    border: 1px solid #fff;
+}
+
+.enviar::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(94, 89, 89, 0.1);
+    transition: all 0.3s;
+    border: 1px solid #fff;
+}
+
+.enviar:hover::before {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+}
+
+.enviar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 2px solid rgb(1, 153, 27);
+    transform: scale(1.2, 1.2);
+}
+
+.enviar:hover::after {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 35em) {
+    .header {
+        min-height: 155vh;
+    }
+    .text-box h1 {
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+        border-bottom: 1px solid #fff;
+        padding: 30px 10px;
+    }
+    .nav-links {
+        position: fixed;
+        background: hsl(0 0% 0% / 0.75%);
+        backdrop-filter: blur(1rem);
+        height: 100vh;
+        width: 270px;
+        top: 0;
+        right: -270px;
+        text-align: left;
+        z-index: 9999;
+        transition: 0.5s;
+    }
+    @supports (-webkit-backdrop-filter:blur(1rem)) {
+        .nav-links {
+            background: hsl(0 0% 100% / 0.2);
+            -webkit-backdrop-filter: blur(1rem);
+        }
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+    .pass {
+        top: 150px;
+        left: 50%;
+        width: auto;
+    }
+    .consumo {
+        top: 580px;
+    }
+    #myChart1 {
+        margin-bottom: 80px;
+    }
+    .info1 {
+        position: absolute;
+        top: 2%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+    .opt1 {
+        top: 410px;
+        left: 50%;
+        width: auto;
+    }
+    #myChart2 {
+        margin-bottom: 80px;
+        margin-top: 60px;
+    }
+    .opt2 {
+        top: 720px;
+        left: 50%;
+        width: auto;
+    }
+    #myChart3 {
+        margin-bottom: 80px;
+        margin-top: 60px;
+    }
+    .opt3 {
+        top: 990px;
+        left: 50%;
+        width: auto;
+    }
+    .optf {
+        top: 1050px;
+        width: auto;
+    }
+    .enviar {
+        top: 1120px;
+    }
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration-style: wavy;
+}
+
+p {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+}
+
+.swal-modal {
+    background-color: #555;
+}
+
+.swal-text {
+    color: #fff;
+}
+
+.swal-button {
+    background-color: rgb(1, 153, 27);
+}
+
+.swal-icon--success:after,
+.swal-icon--success:before,
+.swal-icon--success__hide-corners {
+    background-color: transparent;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.info1 {
+    position: absolute;
+    top: 28%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.info2 {
+    position: absolute;
+    top: 28%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.info3 {
+    position: absolute;
+    top: 28%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+
+/* .pipi {
+    position: absolute;
+    display: inline-block;
+    left: 35%;
+    top: 20%;
+}
+
+.pipi .pipit {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: relative;
+    z-index: 9999;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; */
+
+
+/* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+
+
+/* opacity: 0;
+    transition: opacity 1s;
+}
+
+.pipi:hover .pipit {
+    visibility: visible;
+    opacity: 1;
+} */

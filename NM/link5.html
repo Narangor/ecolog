@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="/elog/IMAGENES/alcaparrosicon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Nuestra Meta</title>
+    <link rel="stylesheet" href="/elog/NM/styleLink5.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+    <section class="header">
+        <nav>
+            <a href="/elog/index.html"><img src="/elog/IMAGENES/image.png" alt="Logo Colegio Hacienda los Alcaparros"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/elog/index.html">INICIO</a></li>
+                    <li><a href="/elog/CONSUMOS/link2.html">CONSUMOS</a></li>
+                    <li><a href="/elog/ES/link3.html">CONSUMO ACTUAL</a></li>
+                    <li><a href="/elog/QUEES/link4.html">¿QUÉ ES LA HUELLA DE CARBONO?</a></li>
+                    <li><a href="/elog/NE/link6.html">NUESTRO EQUIPO</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Nuestra Meta</h1>
+            <p>El propósito de este proyecto es rastrear el consumo de <strong>ACPM</strong> de los buses, <strong>gas propano</strong>, <strong>energía eléctrica</strong> del colegio y las emisiones de <strong>Dióxido de Carbono (CO₂)</strong> que produce
+                cada sector. Al tener estos datos será posible visualizarlos para dimensionar el volumen de uno de los gases de efecto invernadero producidos por el colegio. Todo esto tiene el fin de <strong>informar</strong> a la comunidad alcaparrina
+                y hacerlos <strong>conscientes</strong> del impacto ambiental del Colegio Hacienda Los Alcaparros.</p>
+        </div>
+    </section>
+    <!--js para el menu toggle responsive-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-270px"
+        }
+    </script>
+
+</body>
+
+</html>
